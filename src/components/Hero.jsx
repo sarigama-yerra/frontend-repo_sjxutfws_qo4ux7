@@ -1,5 +1,6 @@
 import Spline from '@splinetool/react-spline'
 import { motion } from 'framer-motion'
+import MagneticButton from './MagneticButton'
 
 export default function Hero() {
   return (
@@ -34,8 +35,12 @@ export default function Hero() {
             transition={{ delay: 0.25, duration: 0.6, ease: 'easeOut' }}
             className="mt-8 flex items-center gap-4"
           >
-            <a href="#work" className="px-4 py-2 rounded-md bg-yellow-400 text-black font-medium hover:bg-yellow-300 transition-colors">View work</a>
-            <a href="#contact" className="px-4 py-2 rounded-md bg-white/10 text-white hover:bg-white/20 transition-colors">Contact</a>
+            <MagneticButton href="#work" className="group px-4 py-2 rounded-md bg-yellow-400 text-black font-medium hover:bg-yellow-300 transition-colors">
+              <span>View work</span>
+            </MagneticButton>
+            <MagneticButton href="#contact" className="group px-4 py-2 rounded-md bg-white/10 text-white hover:bg-white/20 transition-colors">
+              <span>Contact</span>
+            </MagneticButton>
           </motion.div>
         </div>
       </div>
